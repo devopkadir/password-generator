@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator 🔒</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <fieldset class="container">
+        <legend class="header">Random Password Generator</legend>
+
+        <fieldset>
+            <legend class="main">Sets Of Characters</legend>
+            <label for="strangeLowers">Strange Lower</label>
+            <input id="strangeLowers" type="checkbox" name="options"><br>
+            <label for="strangeUppers">Strange Upper</label>
+            <input id="strangeUppers" type="checkbox" name="options"><br>
+            <label for="lowers">Lower Case</label>
+            <input id="lowers" type="checkbox" name="options"><br>
+            <label for="uppers">Upper Case</label>
+            <input id="uppers" type="checkbox" name="options"><br>
+            <label for="numbers">Number</label>
+            <input id="numbers" type="checkbox" name="options"><br>
+            <label for="symbols">Symbol</label>
+            <input id="symbols" type="checkbox" name="options">
+            <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend class="footer" for="length">Password Length</legend>
+            <input type="number" id="length" min="20" max="300" placeholder="20">
+        </fieldset>
+
+        <br>
+
+        <button class="glow-on-hover" type="button">Generate Password</button>
+
+        <br><br>
+
+        <div id="result"></div>
+
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
